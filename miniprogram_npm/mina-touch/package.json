@@ -1,0 +1,50 @@
+{
+  "_from": "mina-touch",
+  "_id": "mina-touch@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-pGkqdL9Zy4dXazoDz+oEmrixn6s=",
+  "_location": "/mina-touch",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "mina-touch",
+    "name": "mina-touch",
+    "escapedName": "mina-touch",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://r.cnpmjs.org/mina-touch/download/mina-touch-1.0.1.tgz",
+  "_shasum": "a4692a74bf59cb87576b3a03cfea049ab8b19fab",
+  "_spec": "mina-touch",
+  "_where": "D:\\yunshu\\obj\\wechat-face-brushing-app",
+  "author": {
+    "name": "Yrobot"
+  },
+  "bugs": {
+    "url": "https://github.com/Yrobot/mina-touch/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "一个轻量、方便的小程序手势事件监听库",
+  "homepage": "https://github.com/Yrobot/mina-touch#readme",
+  "keywords": [
+    "Yrobot",
+    "mina",
+    "touch"
+  ],
+  "license": "ISC",
+  "main": "mina-touch.js",
+  "name": "mina-touch",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yrobot/mina-touch.git"
+  },
+  "scripts": {},
+  "version": "1.0.1"
+}

@@ -1,0 +1,30 @@
+<view>
+	<view class="shippingProblem">
+		<view class="shippingProblemListWrapper">
+			<view class="shippingProblemList">
+				<view class="shippingProblemListTit">一，卡货</view>
+				<view class="shippingProblemListCon">
+					首先取出卡住的商品，再进入售货机管理页面“故障”项里 选择清楚卡货故障即可。 且在今后的经营中 对商品的摆放做相应的改变，主要是主要商品的尺寸要尽可能与货到尺寸相一致，不要太小  更不能大于货到弹簧尺寸硬塞进去！
+				</view>
+			</view>			
+			<view class="shippingProblemList">
+				<view class="shippingProblemListTit">二，出了货，不找零</view>
+				<view class="shippingProblemListCon">
+					1，补足零钱；2，进入系统管理页面，查看是不是上次补完零钱后没有记录（部分自动售货机补完零钱后需要手动输入补入零钱数目），如果数量是0，请修改；3，拆开纸币器 取出卡住的货币；4，拆开纸币器用毛刷仔细且小心清理掉灰尘  或是寄回厂家进行清理。  
+				</view>
+			</view>	
+			<view class="shippingProblemList">
+				<view class="shippingProblemListTit">三，投入零钱，零钱不进入找零器内</view>
+				<view class="shippingProblemListCon">
+					关机后开机三分钟后进入系统管理页面  然后用一根小棍深入纸币器的复位键 进行复位（插入小棍按住复位键后 会看见纸币器口的灯亮了又灭了然后又亮了就松手 ） 等几分钟后 关机，再次重新开机  基本上就解决问题了！
+				</view>
+			</view>	
+			<view class="shippingProblemList">
+				<view class="shippingProblemListTit">四，纸币器口的灯不亮或是忽亮忽暗</view>
+				<view class="shippingProblemListCon">
+					打开纸币器，清除异物 后关机 再开机就可以了！
+				</view>
+			</view>	
+		</view>
+	</view>
+</view>

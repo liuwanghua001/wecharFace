@@ -1,0 +1,28 @@
+.content{width:100%;background:#fff;}
+.content .header{box-shadow: 0rpx 8rpx 8rpx #eee;padding-bottom:60rpx;width:90%;margin:0 auto;
+height:auto;}
+.logo {height: 200rpx;width: 200rpx;margin:100rpx auto 50rpx auto;display:block;}
+.text-area{}
+.title{font-size: 36rpx;color:#000;font-weight:bold;}
+.price{color:#06bd03;}
+.price,.title{display:block;width:100%;height:60rpx;text-align:center;}	
+.coupon-payment,
+.pay-immediately{width:600rpx;height:60rpx;border-radius:40px;
+margin:0 auto;display:block;text-align:center;line-height:60rpx;font-size:26rpx;
+}
+.coupon-payment{background:#06bd03;margin-bottom:20rpx;color:#FFF;}
+.coupon-payment .meany{font-weight:bold;}
+.pay-immediately{border:1rpx solid #06bd03;color:#06bd03;}
+.request-link{text-align:center;margin-top:50rpx;}
+.request-link .prompt-icon{color:#f60;}
+.request-link .prompt-info{color:#000;text-indent:10rpx;display:inline-block;font-size:28rpx;
+}
+.content .index-h5page{
+  width:100%;  
+}
+.content .index-h5link{
+  display:block;
+  height:226rpx;
+  margin:200rpx auto 0 auto;
+  width:auto;
+}

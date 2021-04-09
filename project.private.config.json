@@ -1,0 +1,143 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/face/teacher/studentInfo/studentInfo",
+          "pathName": "pages/face/teacher/studentInfo/studentInfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/face/teacher/confirmInfo/confirmInfo",
+          "pathName": "pages/face/teacher/confirmInfo/confirmInfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/face/parents/index/index",
+          "pathName": "pages/face/parents/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/parents/myself/myself",
+          "pathName": "pages/parents/myself/myself",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/face/parents/order/order",
+          "pathName": "pages/face/parents/order/order",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/face/teacher/confirmInfo/confirmInfo",
+          "pathName": "pages/face/teacher/confirmInfo/confirmInfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/face/login/login",
+          "pathName": "pages/face/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/face/login/login",
+          "pathName": "pages/face/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/face/parents/index/index",
+          "pathName": "pages/face/parents/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/drainage/index/index",
+          "pathName": "pages/drainage/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/drainage/index/index",
+          "pathName": "pages/drainage/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/face/teacher/confirmInfo/confirmInfo",
+          "pathName": "pages/face/teacher/myself/myself",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/face/parents/myself/myself",
+          "pathName": "pages/face/parents/myself/myself",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/drainage/index/index",
+          "pathName": "pages/drainage/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/drainage/shippingProblem/shippingProblem",
+          "pathName": "pages/drainage/shippingProblem/shippingProblem",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/face/parents/share/share",
+          "pathName": "pages/face/parents/share/share",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/drainage/index/index",
+          "pathName": "pages/drainage/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/face/parents/index/index",
+          "pathName": "pages/face/parents/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/face/parents/myself/myself",
+          "pathName": "pages/face/parents/line/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/face/parents/myself/myself",
+          "pathName": "pages/face/parents/myself/myself",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/face/teacher/studentInfo/studentInfo",
+          "pathName": "pages/face/teacher/studentInfo/studentInfo",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

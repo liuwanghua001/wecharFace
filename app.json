@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/face/login/login",
+    "pages/face/teacher/studentInfo/studentInfo",
+    "pages/face/teacher/confirmInfo/confirmInfo",
+    "pages/face/parents/index/index",
+    "pages/face/parents/myself/myself",
+    "pages/face/parents/order/order",
+    "pages/drainage/index/index",
+    "pages/drainage/h5CommercialAdver/h5CommercialAdver",
+    "pages/drainage/auth/auth",
+    "pages/drainage/shippingProblem/shippingProblem",
+    "pages/face/parents/share/share",
+    "pages/face/parents/line/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-nav-bar": "@vant/weapp/nav-bar/index",
+    "van-notify": "@vant/weapp/notify/index",
+    "van-panel": "@vant/weapp/panel/index",
+    "van-overlay": "@vant/weapp/overlay/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+    "footer-nav": "/components/parents/footerNav/footerNav",
+    "na-data-show": "/components/parents/noDataShow/noDataShow",
+    "ec-canvas": "/components/parents/ecCanvas/ecCanvas"
+  },
+  "permission": {    
+    
+  }
+}

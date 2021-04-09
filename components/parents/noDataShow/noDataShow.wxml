@@ -1,0 +1,7 @@
+<!-- 显示默认页面 -->
+<view class="wrapper"> 
+    <view class="block">
+      <image src="/pages/face/source/images/no-find.png" class="show-icon"></image> 
+      <view class="word-show">{{ descriptionInfo }}</view>  
+    </view>      
+</view>

@@ -1,0 +1,20 @@
+<view class="content">
+		<view class="header">
+			<image class="logo" src="/pages/drainage/source/images/shop.jpg"></image>
+			<view class="text-area" bindtap="personalCenter">
+				<view class="title">产品标题</view>
+        <!-- <view>￥12</view> -->
+			</view>
+			<view class="coupon-payment" bindtap="couponPayment">立即支付 ￥ <text class="meany">0.01</text></view>
+			<view class="pay-immediately" bindtap="payImmediately">立即支付领券减0.1-0.5元</view>
+			<view class="request-link">
+				<text class="prompt-icon iconfont iconwenhao"></text>
+				<text class="prompt-info" bindtap="payRequest">支付成功不出货?点击解决</text>
+			</view>
+		</view>		
+		<!-- <navigator url="/pages/drainage/auth/auth" style="text-align:center;">去授权</navigator> -->
+		
+		<view class="index-h5page" bindtap="toH5link">
+			<image src="/pages/drainage/source/images/center-bottom-banner.png" class="index-h5link"></image>
+		</view>
+	</view>

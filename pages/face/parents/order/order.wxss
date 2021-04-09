@@ -1,0 +1,78 @@
+page{
+  background:#F2F2F2;
+}
+.order-info{
+  background:#F2F2F2;
+  width:100%;
+}
+.order-info .order-list{
+  display:flex;
+  height:150rpx;
+  background:#fff;   
+  width:92%;
+  border-radius:14rpx;
+  padding:30rpx 20rpx 50rpx 20rpx;
+  margin:20rpx auto;
+}
+.order-info .order-list .order-list-l{
+  width:90rpx;  
+  /* background:pink; */
+}
+.order-info .order-list .order-list-l .order-list-l-img{
+  width:80rpx;
+  height:80rpx;
+  /* border:1px solid blue; */
+  margin:30rpx auto 0 auto;
+  display:block;  
+}
+.order-info .order-list .order-list-c{
+  flex:1;    
+  color:#b5b2b3;
+  font-size: 30rpx;
+}
+.order-info .order-list .order-list-c .order-list-title{
+  color:#333333;
+  white-space:nowrap;  
+  width:380rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  font-weight:500;
+  font-size:33rpx;
+  
+  margin-bottom:20rpx;
+}
+.order-info .order-list .order-list-c .order-time,
+.order-info .order-list .order-list-c .order-order-number{
+  margin-top:1rpx;
+  color:#989898;
+  font-size:26rpx;
+}
+.order-info .order-list .order-list-c .order-order-number{
+
+}
+.order-info .order-list .order-list-r{
+  width:120rpx;  
+  font-size:32rpx;
+  /* background:red; */
+}
+.order-info .order-list .order-list-r .order-price,
+.order-info .order-list .order-list-r .order-status{
+  /* line-height:45rpx; */
+  /* height:75rpx;   */
+  text-align:center;
+}
+.order-info .order-list .order-list-r .order-price{
+  color:#04C360;
+}
+.order-info .order-list .order-list-r .order-status{
+  color:#656565;
+  margin-top:30rpx;
+  height:40rpx;    
+}
+.order-success{
+  color:#04C360!important;
+}
+.order-list-con{
+  /* border:1px solid red; */
+  margin-bottom:200rpx;
+}

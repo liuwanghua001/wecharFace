@@ -1,0 +1,117 @@
+<view class="myself">
+  <view class="myself-header-wrapper">
+    <view class="myself-header">
+      <view class="myself-header-l">
+        <view class="myself-header-l-head-wrapper">
+          <image src="/pages/face/source/images/myself-head.png" class="myself-header-l-head"></image>
+        </view>
+      </view>
+      <view class="myself-header-r">
+        <view class="myself-name">{{ loginInfo.FSTName }}</view>
+        <view class="myself-school-class">
+          <text class="school">{{ loginInfo.shcoolName }}</text>
+          <text class="class">{{ loginInfo.GradeName }} {{ loginInfo.ClassName }}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 限购 -->
+  <view class="black-one black-one-icon" wx:if="{{FSTStatus==1}}">
+    <view class="black-line" bindtap='showshadow' id='1'>
+      <view class="print iconfont icon-cuxiaohuodong-xiangouhuodong"></view>
+      <view class="title">限购</view>
+      <view class="arr">
+        <text class="iconfont icon-xiala"></text>
+      </view>
+    </view>
+    <!-- 解绑 -->
+    <view class="black-line" bindtap='showshadow' id='2'>
+      <view class="print iconfont icon-jiebang"></view>
+      <view class="title">解绑</view>
+      <view class="arr">
+        <text class="iconfont icon-xiala"></text>
+      </view>
+    </view>
+  </view>
+  <!-- 块二 -->
+  <view class="black-one black-two-icon">
+    <view class="black-line"  bindtap="Jump">
+      <view class="print iconfont icon-xiugaimima"></view>
+      <view class="title">修改密码</view>
+      <view class="arr">
+        <text class="iconfont icon-xiala"></text>
+      </view>
+    </view>
+    <view class="black-line">
+      <view class="print iconfont icon-gerenxinxi"></view>
+      <view class="title">个人信息</view>
+      <view class="arr">
+        <text class="iconfont icon-xiala"></text>
+      </view>
+    </view>
+    <view class="black-line">
+      <view class="print iconfont icon-teamwork"></view>
+      <view class="title">多关联小孩</view>
+      <view class="arr">
+        <text class="iconfont icon-xiala"></text>
+      </view>
+    </view>
+    <view class="black-line">
+      <view class="print iconfont icon-qiehuanzhanghao"></view>
+      <view class="title" bindtap="accountLogout">切换帐号</view>
+      <view class="arr">
+        <text class="iconfont icon-xiala"></text>
+      </view>
+    </view>
+  </view>
+  <footer-nav currentStuds="2"></footer-nav>
+
+</view>
+<!-- 遮罩层 -->
+<view class="shadow" wx:if="{{chooseSize}}" bindtap='hideModal'></view>
+<!-- 上滑高度 -->
+<view class='choosen' wx:if="{{chooseSize}}" animation='{{animationData}}'>
+  <!-- 内容 -->
+  <!-- 限购 -->
+  <view class="container-box" wx:if="{{PopupID=='1'}}">
+    <view class="title1">限购</view>
+    <view class="limit">
+      <view class="limit-quota">
+        <view class="limit-quota-l">限额</view>
+        <view class="limit-quota-c">
+          <input type="text" bindinput="FSLimitAmount" value="0"/>
+        </view>
+        <view class="limit-quota-r">元/次</view>
+      </view>
+      <view class="limit-quota">
+        <view class="limit-quota-l">限次</view>
+        <view class="limit-quota-c">
+          <input type="text" value="0" bindinput="FSLimitCount" />
+        </view>
+        <view class="limit-quota-r">次/日</view>
+      </view>
+      <view class="prompt-message">限额和限次为0时，则没有限额和限次</view>
+    </view>
+    <view class="confirm-btn">
+      <view class="confirm-btn-l">
+        <view class="cancel" bindtap="clonseBox">取消</view>
+      </view>
+      <view class="confirm-btn-r">
+        <view class="confirm" bindtap="confirmQuota">确认</view>
+      </view>
+    </view>
+  </view>
+  <!-- 解绑 -->
+  <view class="container-box" wx:eles>
+    <view class="title1">解绑</view>
+    <view class="title2">确定解除{{loginInfo.FSTName}}刷脸消费时扣您账户余额吗？</view>
+    <view class="confirm-btn">
+      <view class="confirm-btn-l">
+        <view class="cancel" bindtap="clonseBox">取消</view>
+      </view>
+      <view class="confirm-btn-r">
+        <view class="confirm" bindtap="confirmbtn">确认</view>
+      </view>
+    </view>
+  </view>
+</view>

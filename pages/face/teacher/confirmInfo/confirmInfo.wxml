@@ -1,0 +1,47 @@
+<view class="container">
+  <view class="enter-info">
+    <view class="enter-info-list">
+      <view class="enter-info-list-once">
+        <view class="name">姓名：</view>
+        <!-- <view class="value">{{ enterStudentInfo.name }}</view> -->
+        <view class="value">
+          <van-cell-group>
+            <van-field    
+            clearable    
+            value="{{ enterStudentInfo.name }}"
+            placeholder="请输入姓名"
+            custom-style="border-radius:14rpx;border:1px solid #DDDDDD;"    
+            border="{{ false }}"
+            bind:change="onChangeName"
+            />
+        </van-cell-group>
+        </view>              
+      </view>
+      <view class="enter-info-list-once">
+        <view class="name">学校：</view><view class="value">{{ enterStudentInfo.school }}</view>
+      </view>
+      <view class="enter-info-list-once">
+        <view class="name">年级：</view><view class="value">{{ enterStudentInfo.lv }}</view>
+      </view>
+      <view class="enter-info-list-once">
+        <view class="name">班级：</view><view class="value">{{ enterStudentInfo.className }}</view>
+      </view>
+      <view class="enter-info-list-once">
+        <view class="name">家长手机：</view>
+        <!-- <view class="value">{{ enterStudentInfo.parphone }}</view> -->
+        <view class="value">
+          <van-field       
+          clearable 
+          type="number"
+          value="{{ enterStudentInfo.parphone }}"
+          custom-style="border-radius:14rpx;border:1px solid #DDDDDD;"
+          placeholder="请输入家长手机号"
+          border="{{ false }}"
+          bind:change="onChangePhone"          
+          />
+        </view>        
+      </view>      
+    </view>
+  </view>
+  <view class="enter-student-info-btn" bindtap="enterStudentInfomation">确认</view>
+</view>

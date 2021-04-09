@@ -1,0 +1,23 @@
+{
+  "name": "weixinschoolface",
+  "version": "1.0.0",
+  "description": "{**When you're done, you can delete the content in this README and update the file with details for others getting started with your repository**}",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/weapp": "^1.6.8"
+  },
+  "devDependencies": {
+    "js-md5": "^0.7.3",
+    "mina-touch": "^1.0.1",
+    "querystring": "^0.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:pingzixiao/wechat-face-brushing-app.git"
+  }
+}

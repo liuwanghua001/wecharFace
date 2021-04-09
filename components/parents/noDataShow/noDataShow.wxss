@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1100rpx;  
+}
+.wrapper .show-icon{
+  width:100rpx;
+  height:100rpx;
+  margin:0 auto;  
+  display:block;
+}
+.block {  
+  color:#989898;
+}
+.block .word-show{
+  font-size:30rpx;
+  margin-top:20rpx;
+}

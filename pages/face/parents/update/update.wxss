@@ -1,0 +1,94 @@
+/* pages/face/update/update.wxss */
+/* 修改密码框弹层 */
+.password-change-box{      
+  /* background:#f00; */
+  border-radius:140rpx;
+  width:700rpx;
+  height:100%;
+  display:flex;
+  justify-content:center;
+}
+.password-change-box .password-change-boxcon{
+  width:92%;
+  height:650rpx;  
+  background:#fff;
+  border-radius:14rpx;
+}
+.password-change-box .password-change-boxcon .close{
+  display:flex;
+  height:70rpx;  
+}
+.password-change-box .password-change-boxcon .close text:nth-child(1){
+  flex:1;
+}
+.password-change-box .password-change-boxcon .close text:nth-child(2){
+  width:100rpx;  
+  text-align:center;
+  line-height:70rpx;
+  text-indent:30rpx;
+  color:#666666;
+  /* background:red; */
+}
+.password-change-box .password-change-boxcon .title{
+  color:#000000;
+  margin-top:40rpx;
+  font-size:35rpx;
+}
+/* 表单区 */
+.change-password-wrap{
+  height:340rpx;
+}
+.change-password-wrap .prompt-message{
+  height:90rpx;
+  text-align:right;
+  color:#989898;
+  line-height:90rpx;
+  font-size:28rpx;
+  padding-right:30rpx;
+}
+.change-password-wrap .change-password{
+  display:flex;
+  width:92%;
+  margin:0 auto;
+  height:100rpx;
+  line-height:100rpx;
+  margin-top:30rpx;
+}
+.change-password-wrap .change-password .change-password-l{
+  width:160rpx;
+  text-align:right;
+  font-size:32rpx;
+  color:#656565;
+}
+.change-password-wrap .change-password .change-password-r{
+  flex:1;
+}
+.confirm-btn{
+  display:flex;
+  height:200rpx;
+  text-align:center;
+  margin-top: 100rpx;
+}
+.confirm-btn .confirm-btn-l{
+  flex:1;  
+}
+.confirm-btn .confirm-btn-l .cancel,
+.confirm-btn .confirm-btn-r .confirm{
+  width:200rpx;
+  height:80rpx;
+  font-size:30rpx;  
+  line-height:80rpx;
+  border-radius:14rpx;
+  margin:0 auto;
+}
+.confirm-btn .confirm-btn-l .cancel{  
+  border:1px solid #656565;
+  color:#656565;  
+}
+.confirm-btn .confirm-btn-r .confirm{
+  background:#04C360;
+  color:#fff;
+}
+.confirm-btn .confirm-btn-r{
+  flex:1;
+}

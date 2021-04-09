@@ -1,0 +1,60 @@
+<!--pages/face/update/update.wxml-->
+<view class="password-change-box">
+      <view class="password-change-boxcon">
+        <!-- <view class="close"><text></text><text bindtap="clonseBox">X</text></view> -->
+        <view class="title">修改密码</view>
+        <view class="change-password-wrap">
+          <view class="change-password">
+            <view class="change-password-l">旧密码：</view>
+            <view class="change-password-r">
+              <van-field      
+                  clearable 
+                  custom-style="border-radius:14rpx;border:1px solid #DDDDDD;"    
+                  type="password"     
+                  model:value="{{ oldPassword }}"
+                  placeholder="请输入旧密码"
+                  border="false"
+                  bind:change="onChange"
+              />              
+            </view>
+          </view>
+          <view class="change-password">
+            <view class="change-password-l">新密码：</view>
+            <view class="change-password-r">
+              <van-field      
+                  clearable 
+                  custom-style="border-radius:14rpx;border:1px solid #DDDDDD;"    
+                  type="password"     
+                  model:value="{{ confirmNewPassword }}"
+                  placeholder="请输入新密码"
+                  border="false"
+                  bind:change="onChange"
+              />              
+            </view>
+          </view>
+          <view class="change-password">
+            <view class="change-password-l">确认密码：</view>
+            <view class="change-password-r">
+              <van-field      
+                  clearable 
+                  custom-style="border-radius:14rpx;border:1px solid #DDDDDD;"    
+                  type="password"     
+                  model:value="{{ confirmPassword }}"
+                  placeholder="请输入新密码"
+                  border="false"
+                  bind:change="onChange"
+              />              
+            </view>
+          </view>
+          <view class="prompt-message">*密码必须是8-16位的数字、字符组合</view>
+        </view>
+        <view class="confirm-btn">
+          <!-- <view class="confirm-btn-l">
+            <view class="cancel" bindtap="clonseBox">取消</view>
+          </view> -->
+          <view class="confirm-btn-r">
+            <view class="confirm" bindtap="confirmModPwd">确认</view>
+          </view>          
+        </view>
+      </view>      
+    </view>

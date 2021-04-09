@@ -1,0 +1,212 @@
+.studentInfo{
+  width:100%;
+  height:100%;
+  background:#F2F2F2;
+}
+/* 学生信息 */
+.school-info{
+  width:90%;
+  height:120rpx;
+  line-height:120rpx;
+  background:#fff;
+  margin:0 auto;
+  display:flex;
+  font-size:26rpx;
+  margin-top:20rpx;
+  border-radius:14rpx;  
+  color:#333333;  
+  padding:0 20rpx 0 20rpx;
+}
+.school-info .school-addr{
+  flex:1; 
+}
+.school-info .school-lv{
+  flex:1;
+  text-align:center;
+}
+.school-info .school-class{
+  width:100rpx;  
+  text-align:center;  
+}
+.school-info .school-default-pwd{
+  flex:1;
+  width:260rpx;
+}
+.school-info .school-default-pwd .school-default-pwd-btn{
+  border:1px solid #04C360;
+  width:250rpx;
+  text-align:center;
+  height:80rpx;  
+  margin-top:20rpx;
+  border-radius:20rpx;
+  line-height:80rpx;  
+  color:#04C360;
+  margin:20rpx auto;
+}
+/* 采集列表 */
+.linked-account-list-wrap{
+  width:100%;  
+  margin:10rpx auto 0 auto;
+}
+.linked-account-list-wrap .linked-account-list{
+  height:160rpx;
+  background:#fff;
+  width:90%;
+  padding:20rpx 20rpx;
+  display:flex;
+  margin:20rpx auto 0 auto;
+  border-radius:14rpx;
+  background:#fff;  
+  /* background:pink; */
+}
+.linked-account-list-wrap .linked-account-list .linked-account-list-l{
+  
+  height:100%;
+  width:190rpx;  
+}
+.linked-account-list-wrap .linked-account-list .linked-account-list-l .linked-account-list-l-head{  
+  width:160rpx;
+  height:160rpx;
+  border-radius:14rpx;
+}
+.linked-account-list-wrap .linked-account-list .linked-account-list-c{
+  flex:1;  
+  font-size:36rpx;
+}
+.linked-account-list-wrap .linked-account-list .linked-account-list-c .student-name,
+linked-account-list-wrap .linked-account-list .linked-account-list-c .student-phone{
+  height:60rpx;
+  color:#282828;
+}
+.linked-account-list-wrap .linked-account-list .linked-account-list-c .student-name{
+  margin-top:20rpx;
+}
+.linked-account-list-wrap .linked-account-list .linked-account-list-c .student-phone{
+  margin-top:20rpx;
+}
+.linked-account-list-wrap .linked-account-list .linked-account-list-r{
+  width:210rpx;
+  height:100%;
+  /* line-height:160rpx;   */
+}
+.linked-account-list-wrap .linked-account-list .linked-account-list-r .linked-account-list-r-btninfo{
+  /* background:red; */
+  height:100%;
+}
+.linked-account-list-wrap .linked-account-list .linked-account-list-r .linked-account-list-r-btninfo .collectionNull{
+  margin-top:35rpx;
+}
+.linked-account-list-wrap .linked-account-list .linked-account-list-r .isCollection{
+  width:180rpx;
+  height:85rpx;
+  border-radius:10rpx;
+  color:#fff;
+  line-height:90rpx;
+  text-align:center;
+  margin:10rpx auto 0 auto;  
+}
+.linked-account-list-wrap .linked-account-list .linked-account-list-r .Collection-desc{
+  color:#04C360;
+  font-size:25rpx;
+  text-align:center;
+  /* background:blue; */
+  height:50rpx;
+  line-height:50rpx;
+  margin-top:7rpx;
+}
+/* 已采集 */
+.activeTrueBg{
+  background:#DDDDDD;
+  color:#989898;
+  font-size:34rpx;
+}
+/* 未采集 */
+.activeFalseBg{
+  background:#04C360;
+  color:#FFF;
+  margin-top:30rpx;
+}
+/* 查看家长登录的默认密码 */
+.parents-login-box{
+  height:700rpx;
+  width:92%;
+  margin:0 auto;
+}
+.parents-login-box .close{
+  display:flex;
+  height:70rpx;  
+}
+.parents-login-box .close text:nth-child(1){
+  flex:1;
+}
+.parents-login-box .close text:nth-child(2){
+  width:100rpx;  
+  text-align:center;
+  line-height:70rpx;
+  text-indent:30rpx;
+  color:#666666;
+  /* background:red; */
+}
+.parents-login-box .parents-change-password{
+  text-align:center;
+  height:120rpx;
+  line-height:120rpx;
+}
+.parents-login-box .parent-input-pwdbd{
+  margin:0 auto;
+}
+.parents-login-box .get-parents-pwd{
+  height:120rpx;
+  line-height:120rpx;
+  text-align:center;
+  width:100%;  
+  margin:40rpx auto 0 auto;  
+  border-radius:14rpx;
+  background:#090;
+  color:#fff;  
+  text-align:center;
+  font-size:35rpx;
+}
+.parents-login-box .parents-hidden-pwd{
+  height:30rpx;
+  font-size:40rpx;
+  color:#000;
+  text-align:center;
+  width:100%;
+  margin-top:50rpx;
+}
+.parents-login-box .parents-copy-pwd{
+  width:100%;
+  height:40rpx;
+  text-align:center;
+  font-size:40rpx;
+  margin-top:50rpx;
+}  
+/* 公告 */
+.announcement-box {
+  width:100%;
+  height:100%;
+  background:#fff;
+}
+.announcement-box .announcement {
+  width:92%;
+  height:900rpx;
+}
+.share-banner {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  align-content: center;
+  width:100%;
+  /* border:1px solid pink; */
+  /* background:red; */
+  margin-left:25rpx;
+}
+/*canvas宽高*/
+canvas{
+  margin:0 auto;
+  /* border:1px solid red;   */
+  width: 600rpx;
+  height: 750rpx;
+  box-shadow:0px 0px 14px 7px #efefef;
+}

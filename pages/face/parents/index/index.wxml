@@ -1,0 +1,95 @@
+<!-- 家长导航组件 -->
+<view class="parent-index">
+  <view class="top-title">
+    <view class="top-title-l">您好，欢迎使用校园刷脸服务</view>
+    <view class="top-title-r">
+      <view class="bind-account" bindtap="bindAccount" wx:if="{{ FSTStatus == 1 }}">去绑定付款帐号{{FSTStatus}}</view>
+      <view class="bind-account" bindtap="bindAccount" wx:if="{{ FSTStatus == 4 }}">已解绑{{FSTStatus}}</view>
+    </view>
+  </view>
+  <van-cell title="" bind:click="showPopup" />
+  <van-popup show="{{ showbindAccount }}"
+  custom-style="border-radius:14rpx;"
+   bind:close="onClose">
+    <!-- 家长首次登录默认密码修改 -->
+    <view class="password-change-box">
+      <view class="password-change-boxcon">
+        <view class="close"><text></text><text bindtap="clonseBox">X</text></view>
+        <view class="title">为了您账号安全，请更改默认登录密码</view>
+        <view class="change-password-wrap">
+          <view class="change-password">
+            <view class="change-password-l">新密码：</view>
+            <view class="change-password-r">
+              <van-field      
+                  clearable 
+                  custom-style="border-radius:14rpx;border:1px solid #DDDDDD;"    
+                  type="password"     
+                  model:value="{{ confirmNewPassword }}"
+                  placeholder="请输入新密码"
+                  border="false"
+                  bind:change="onChange"
+              />              
+            </view>
+          </view>
+          <view class="change-password">
+            <view class="change-password-l">确认密码：</view>
+            <view class="change-password-r">
+              <van-field      
+                  clearable 
+                  custom-style="border-radius:14rpx;border:1px solid #DDDDDD;"    
+                  type="password"     
+                  model:value="{{ confirmPassword }}"
+                  placeholder="请输入新密码"
+                  border="false"
+                  bind:change="onChange"
+              />              
+            </view>
+          </view>
+          <view class="prompt-message">*密码必须是8-16位的数字、字符组合</view>
+        </view>
+        <view class="confirm-btn">
+          <view class="confirm-btn-l">
+            <view class="cancel" bindtap="clonseBox">取消</view>
+          </view>
+          <view class="confirm-btn-r">
+            <view class="confirm" bindtap="confirmModPwd">确认</view>
+          </view>          
+        </view>
+      </view>      
+    </view>
+  </van-popup>  
+  <!-- 提示家长绑定帐户引导页 -->
+  <van-popup show="{{ showParentGuidePage }}" 
+  custom-style="background:none;height:100%;height:100%;"
+  bind:close="onCloseshowParentGuidePage">  
+    <view class="onCloseshowParentGuidePage">
+      <image src="/pages/face/source/images/parents-sho-bidaccount.png" bindtap="onCloseshowParentGuidePage"></image>    
+    </view>    
+  </van-popup>
+  <view class="aImg">
+    <image src="/pages/face/source/images/parent-index-banner.png" class="pic"></image>
+  </view>
+  <view class="comsumption-statistics">
+    <view class="comsumption-statistics-l">
+      <view class="comsumption-statistics-l-tit">消费统计</view>
+      <view class="today-comsumption">
+        <view class="today-comsumption-l">
+          <view class="iconfont icon-lishizhangdan"></view>
+        </view>
+        <view class="today-comsumption-r">
+          <view class="today-comsumption-r-tit">今日累计消费</view>
+          <view class="today-comsumption-r-price">￥120.00</view>
+        </view>
+      </view>
+    </view>
+    <view class="comsumption-statistics-r">
+      <image src="/pages/face/source/images/today-comsumption-pic.jpg" class="today-comsumption-pic"></image>
+    </view>        
+  </view>  
+  <!-- 统计图 -->
+  <view class="summary-graph">
+    <ec-canvas id="mychart-dom-graph" canvas-id="mychart-graph" ec="{{ ec }}"></ec-canvas>
+    <!-- <image src="/pages/face/source/images/picture-data.png"></image>     -->
+  </view>  
+  <footer-nav currentStuds="0"></footer-nav>
+</view>

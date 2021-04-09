@@ -1,0 +1,7 @@
+<view>
+  <view class="share-banner">   
+    <canvas canvas-id="myCanvas"></canvas>
+    <button bindtap="saveImgtoPhone" type="primary">保存到相册</button> 
+  </view>
+</view>
+

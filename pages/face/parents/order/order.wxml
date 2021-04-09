@@ -1,0 +1,52 @@
+<view class="order-info">  
+  <van-dropdown-menu     
+  style="margin-bottom:10rpx;display:block;"
+  active-color="#04C360">
+    <van-dropdown-item title="时间段" data-changetime="{{ defaultTime }}" bind:change="changeDefaultTime" value="{{ defaultTime }}" options="{{ byTime }}" />    
+    <van-dropdown-item title="订单状态" data-changetime="{{ defaultStatu }}" bind:change="changeDefaultStatu" value="{{ defaultStatu }}" options="{{ byStatus }}" />
+  </van-dropdown-menu>
+  <!-- <view class="order-list-con" wx:if="{{ orderListData.length >= 1 }}"> -->
+
+  <!-- <view class="order-list-con" wx:if="{{ orderListData.length >= 1 }}">
+    <view class="order-list" wx:for="{{ orderListData}}" wx:key="index">
+      <view class="order-list-l">
+        <image src="{{ item.PwoPrImgUrl }}" class="order-list-l-img"></image>
+      </view>
+      <view class="order-list-c">
+        <view class="order-list-title">{{ item.PwoPrName }}</view>      
+        <view class="order-time">下单时间：{{ item.PwoAddtime }}</view>
+        <view class="order-order-number">订单编号:</view>
+        <view class="order-order-number">{{ item.PwoTradeNO }}</view>
+      </view>
+      <view class="order-list-r">
+        <view class="order-price">￥{{ item.PwoTotalfee }}</view>        
+        <view class="order-status order-success" wx:if="{{ item.PwoState == 1}}">已出货</view>
+        <view class="order-status" wx:if="{{ item.PwoState == 2}}">已退出</view>
+      </view>
+    </view>     
+  </view> -->
+
+  <view class="order-list-con" wx:if="{{ orderListData.length >= 1 }}">
+    <view class="order-list" wx:for="{{ orderListData}}" wx:key="index">
+      <view class="order-list-l">
+        <image src="{{ item.PwoPrImgUrl }}" class="order-list-l-img"></image>
+      </view>
+      <view class="order-list-c">
+        <view class="order-list-title">{{ item.PwoPrName }}</view>      
+        <view class="order-time">下单时间：{{ item.PwoAddtime }}</view>
+        <view class="order-order-number">订单编号:</view>
+        <view class="order-order-number">{{ item.PwoTradeNO }}</view>
+      </view>
+      <view class="order-list-r">
+        <view class="order-price">￥{{ item.PwoTotalfee }}</view>        
+        <view class="order-status order-success" wx:if="{{ item.PwoState == 1}}">已出货</view>
+        <view class="order-status" wx:if="{{ item.PwoState == 2}}">已退出</view>
+      </view>
+    </view>     
+  </view>
+
+  <!-- 显示默认页面组件 -->
+  <!-- <na-data-show wx:if="{{ noData }}" wx:if="{{ orderListData.length < 1 }}" descriptionInfo="什么也没有找到,下拉刷新试试哈"></na-data-show>  -->
+  <!-- 导航组件 -->
+  <footer-nav currentStuds="1"></footer-nav>
+</view>

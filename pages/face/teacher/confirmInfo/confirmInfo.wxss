@@ -1,0 +1,44 @@
+.container{
+  background:#F2F2F2;
+  height:900rpx;
+  width:100%;
+  /* background:red; */
+  padding:1rpx;
+}
+.enter-info{  
+  border-radius:14rpx;
+  width:80%;
+  margin:50rpx auto 0 auto;
+  padding:40rpx 40rpx;
+  background:#fff;
+  /* border:1px solid red; */
+}
+.enter-info-list .enter-info-list{
+  width:100%;  
+}
+.enter-info-list .enter-info-list-once{  
+  display:flex;
+  height:100rpx;  
+  line-height:100rpx;
+  font-size:30rpx;
+  /* background:red; */
+}
+.enter-info-list enter-info-list-once .name{
+  flex:1;
+  color:#656565;  
+}
+.enter-info-list enter-info-list-once .value{
+  flex:1;
+  color:#000;
+  background:red;
+}
+.enter-student-info-btn{
+  width:92%;
+  height:100rpx;
+  background:#04C360;
+  text-align:center;
+  margin:50rpx auto 0 auto;
+  border-radius:14rpx;
+  color:#fff;
+  line-height:100rpx;  
+}

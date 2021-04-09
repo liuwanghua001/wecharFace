@@ -1,0 +1,113 @@
+.login-welcome{
+  font-size:40rpx;
+  font-weight:500;
+  line-height:90rpx;
+  margin:20rpx 0 30rpx 0;  
+}
+.forgot-password{
+  font-size:30rpx;
+  color:#02c461;
+  text-align:center;
+  margin-top:50rpx;
+}
+.form-title-desc{
+  font-size:35rpx;
+  color:#6b6b6b;
+  margin-top:20rpx;
+}
+.group-from{
+  margin-top:40rpx;
+}
+
+/* 自定义协议复选框 */
+.agreement{
+  width:100%;
+  position:fixed;
+  bottom:0;
+  height:100rpx;
+  /* border:1px solid #0909; */
+  line-height:100rpx;
+  display:flex;
+}
+.agreement .checkbox{
+  width:50rpx;  
+}
+.agreement .agreement-desc{
+  flex:1;
+  color:#a8a8a8;
+  font-size:28rpx;  
+}
+.checkbox .wx-checkbox-input {
+  border-radius: 32rpx; /* 圆角 */
+  width: 32rpx; /* 背景的宽 */
+  height: 32rpx; /* 背景的高 */
+  border: 2px solid #eee;
+}
+.checkbox .wx-checkbox-input-disabled {
+  border-radius: 32rpx; /* 圆角 */
+  width: 32rpx; /* 背景的宽 */
+  height: 32rpx; /* 背景的高 */
+  background: #f3f3f3;
+  border: 1px solid rgba(201, 201, 201, 1);
+}
+/* .checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  /* background: rgba(255, 129, 92, 1); */
+  /* position:relative; 
+} */
+.checkbox .wx-checkbox-input.wx-checkbox-input-checked::after{
+  content:"";
+  background:#090;
+  width:20rpx;
+  height:20rpx;
+  border-radius:50%;
+  position:absolute;
+  left:7rpx;
+  top:8rpx;
+  overflow:hidden;
+}
+.checkbox  .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 28rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #fff;
+  border:1px solid #090;
+  border-radius:50%;  
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+.checkbox .wx-checkbox-input {
+  border-radius: 32rpx; /* 圆角 */
+  width: 32rpx; /* 背景的宽 */
+  height: 32rpx; /* 背景的高 */
+  /* border: 1px solid #090; */
+}
+.checkbox .wx-checkbox-input-disabled {
+  border-radius: 32rpx; /* 圆角 */
+  width: 32rpx; /* 背景的宽 */
+  height: 32rpx; /* 背景的高 */
+  background: #f3f3f3;
+  border: 1px solid rgba(201, 201, 201, 1);
+} 
+/* .checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  /* background: rgba(255, 129, 92, 1); 
+} */
+.checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+  width:22rpx;
+  height:22rpx;
+  content:"12";
+  /* background:#090; */
+}
+.checkbox  .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 32rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}

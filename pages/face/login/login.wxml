@@ -1,0 +1,101 @@
+<!--index.wxml-->
+<view class="container">   
+  <view class="login-welcome">
+    <view>你好,</view>
+    <view>欢迎使用校园刷脸服务</view>
+  </view>
+  <van-tabs active="{{ active }}"
+   color="#02c461"     
+   title-inactive-colo="#989898"
+   title-active-color="#000000"
+   lazy-render="true"
+   line-height="2px"
+   line-width="50%">
+    <van-tab title="老师" title-style="font-size:40rpx;">      
+      <van-cell-group>        
+        <view style="height:30rpx;"></view>
+        <label class="form-title-desc">用户名</label>
+        <van-field
+          custom-style="{{ customStylesInput }}"
+          placeholder-style="font-size:36rpx;color:#B2B2B2;"
+          model:value="{{ teacherUsername }}"          
+          clearable                  
+          placeholder="请输入帐号"
+          bind:click-icon="onClickIcon"  
+          clearable        
+        />
+        <view class="form-title-desc">密码</view>
+        <van-field
+        placeholder-style="font-size:36rpx;color:#B2B2B2;"
+          custom-style="{{ customStylesInput }}"
+          model:value="{{ teacherPassword }}"
+          type="password"
+          clearable
+          placeholder="请输入登录密码"          
+          border="true"           
+        />        
+        <!-- error-message="帐号或者密码不存在" -->
+      </van-cell-group>
+      <van-button 
+          disabled="{{ flagLogin }}"
+          type="default" 
+          color="#fff"          
+          block="true"
+          bind:click="teacherLogin"           
+          custom-style="{{ customStylesLoginBtn }};margin:0 auto;width:100%;margin-top:100rpx;border-radius:14rpx;">
+          立即登录
+      </van-button>
+      <view class="forgot-password">老师忘记密码</view>
+    </van-tab>
+    <van-tab title="家长" title-style="font-size:40rpx;">       
+      <van-cell-group>          
+        <view style="height:30rpx;"></view>
+        <label class="form-title-desc">小孩姓名</label>     
+        <van-field
+          custom-style="{{ customStylesInput }}"
+          model:value="{{ parentsLogin.childName }}"          
+          clearable                    
+          placeholder="请输入小孩姓名"
+          bind:click-icon="onClickIcon"     
+          bind:change="parentsLoginChildName"     
+        />
+        <view class="form-title-desc">手机号码</view>
+        <van-field
+          custom-style="{{ customStylesInput }}"
+          model:value="{{ parentsLogin.username }}"                   
+          clearable     
+          type="number"     
+          placeholder="请输入手机号"  
+          bind:change="parentsLoginUsername"                
+        />
+        <view class="form-title-desc">密码</view>
+        <van-field
+          custom-style="{{ customStylesInput }}"
+          model:value="{{ parentsLogin.password }}"
+          type="password"     
+          clearable     
+          placeholder="请输入登录密码"          
+          border="{{ false }}"
+          bind:change="parentsLoginPassword"          
+        />        
+      </van-cell-group>
+      <van-button 
+          type="default" 
+          disabled="{{ flagLogin }}"
+          bind:click="parentsLoginbtn"
+          color="#fff"
+          round="true"
+          block="true"
+          custom-style="{{ customStylesLoginBtn }};margin:0 auto;width:100%;margin-top:20rpx;border-radius:14rpx;">
+          立即登录
+        </van-button>
+        <view class="forgot-password">家长忘记密码</view>
+    </van-tab>    
+  </van-tabs>
+  <!-- <navigator style="width:92%;height:80rpx;background:#090;color:#fff;line-height:80rpx;text-align:center;font-size:35rpx;border-radius:14rpx;"
+  url="/pages/drainage/index/index">支付前跳小程序页面测试入口</navigator> -->
+  <view class="agreement">    
+    <checkbox class="checkbox" checked="{{ isAgreement }}" bindtap="agreement"/>
+    <view class="agreement-desc">《人脸授权书》《平台协议》</view>    
+  </view>
+</view>

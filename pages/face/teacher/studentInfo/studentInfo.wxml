@@ -1,0 +1,139 @@
+<!-- <view class="studentInfo" wx:if="{{ studentListInfo.length > 0 }}">   -->
+  <view class="studentInfo">  
+  <van-search
+  shape="round"  
+  value="{{ value }}"
+  input-align="center"
+  placeholder="请输入搜索关键词"
+  />
+  <view class="school-info">
+    <!-- <view class="school-addr">{{ schoolInfo.SchoolName }}</view>
+    <view class="school-lv">{{ schoolInfo.GradeName }}</view>
+    <view class="school-class">{{ schoolInfo.ClassName }}</view> -->
+    <view class="school-addr">长沙外语学院</view>
+    <view class="school-lv">72班</view>
+    <view class="school-class">2年级</view>
+    <view class="school-default-pwd">
+      <view class="school-default-pwd-btn" bindtap="getParentsDfaultPwd">家长登录默认密码</view>
+    </view>
+  </view>
+  <!-- <button type="primary" bindtap="announcementInfo">公告信息</button> -->
+  <van-popup 
+  round="true"
+  custom-style="border-radius:14rpx;width:92%"
+  bind:close="closeSaveCanvase"
+  show="{{ closeSaveCanvase }}">
+    <view class="announcement-box">
+      <view class="announcement">
+        <view class="share-banner">
+          <canvas canvas-id="myCanvas" ></canvas>
+          <button bindtap="saveImgtoPhone" type="primary">保存到相册</button>
+        </view>        
+      </view>
+    </view>
+  </van-popup>
+  <!-- 查看家长首次登录弹出层 -->
+  <van-popup show="{{ parentsFirstLogin }}" 
+  round="true"
+  custom-style="border-radius:14rpx;width:92%"
+  bind:close="parentsFirstLoginBox">
+    <view class="parents-login-box">
+      <view class="close">
+        <text></text>
+        <text bindtap="parentsFirstLoginBox">X</text>
+      </view>
+      <view class="parents-change-password">家长端首次登录默认密码</view>
+      <view class="parent-input-pwdbd">
+        <van-field      
+        clearable 
+        custom-style="border-radius:14rpx;border:1px solid #DDDDDD;"    
+        type="password"     
+        model:value="{{ parentsChangePwd }}"
+        placeholder="请输入登录密码查看家长端默认密码"
+        border="false"
+        bind:change="onChange"
+        />
+      </view>  
+      <view class="get-parents-pwd" bindtap="teacherGetparentPwd">查看</view>
+      <view class="parents-hidden-pwd" wx:if="{{ isHiddenPwd }}">******</view>      
+      <view class="parents-hidden-pwd" wx:else="{{ isHiddenPwd }}">{{ schoolInfo.DefaultPassword }}</view>      
+      <view class="parents-copy-pwd" data-parentsefault="{{ schoolInfo.DefaultPassword }}" bindtap="copyPwd">复制</view>
+    </view>
+  </van-popup>
+  <view class="linked-account-list-wrap">   
+    <!-- <view class="linked-account-list" wx:for="{{ studentListInfo }}" wx:for-index="idx" wx:key="idx">
+      <view class="linked-account-list-l">         
+        <image src="/pages/face/source/images/studentFalseStuds.png" class="linked-account-list-l-head" wx:if="{{ item.FSTStatus == 0 }}"></image>
+        <image src="/pages/face/source/images/studentTrueStuds.png" class="linked-account-list-l-head" wx:elif="{{ item.FSTStatus == 1 }}"></image>
+        <image src="/pages/face/source/images/studentTrueStuds.png" class="linked-account-list-l-head" wx:else="{{ item.FSTStatus == 2 }}"></image>
+      </view>
+      <view class="linked-account-list-c">
+        <view class="student-name">{{ item.FSTName }}</view>
+        <view class="student-phone">{{ item.FSTPhone }}</view>
+      </view>
+      <view class="linked-account-list-r">
+        <view class="linked-account-list-r-btninfo" wx:if="{{ item.FSTStatus == 0 }}">
+          <view class="isCollection activeFalseBg collectionNull" 
+            style="margin-top:50rpx;"
+            data-fstuid="{{ item.FSTUID }}"
+            data-fsorgid="{{ item.FSOrgId }}"
+            data-name="{{ item.FSTName }}"
+            data-school="{{ item.SchoolName }}"
+            data-lv="{{ item.GradeName }}"
+            data-class="{{ item.ClassName }}"
+            data-parphone="{{ item.FSTPhone }}"
+            bindtap="toCollection">
+            未采集
+          </view>          
+        </view>    
+        <view class="linked-account-list-r-btninfo" wx:elif="{{ item.FSTStatus == 1 }}">
+          <view class="isCollection activeTrueBg">已采集</view>
+          <view class="Collection-desc">未绑定付款账号</view>
+        </view>    
+        <view class="linked-account-list-r-btninfo" wx:elif="{{ item.FSTStatus == 2 }}">
+          <view class="isCollection activeTrueBg">已采集</view>
+          <view class="Collection-desc" style="color:#989898;">已关联付款账号</view>
+        </view>       
+      </view>
+    </view>   -->
+
+    <view class="linked-account-list" wx:for="{{ studentListInfo }}" wx:for-index="idx" wx:key="idx">
+      <view class="linked-account-list-l">         
+        <image src="/pages/face/source/images/studentFalseStuds.png" class="linked-account-list-l-head" wx:if="{{ item.FSTStatus == 0 }}"></image>
+        <image src="/pages/face/source/images/studentTrueStuds.png" class="linked-account-list-l-head" wx:elif="{{ item.FSTStatus == 1 }}"></image>
+        <image src="/pages/face/source/images/studentTrueStuds.png" class="linked-account-list-l-head" wx:else="{{ item.FSTStatus == 2 }}"></image>
+      </view>
+      <view class="linked-account-list-c">
+        <view class="student-name">{{ item.FSTName }}</view>
+        <view class="student-phone">{{ item.FSTPhone }}</view>
+      </view>
+      <view class="linked-account-list-r">
+        <view class="linked-account-list-r-btninfo" wx:if="{{ item.FSTStatus == 0 }}">
+          <view class="isCollection activeFalseBg collectionNull" 
+            style="margin-top:50rpx;"
+            data-fstuid="{{ item.FSTUID }}"
+            data-fsorgid="{{ item.FSOrgId }}"
+            data-name="{{ item.FSTName }}"
+            data-school="{{ item.SchoolName }}"
+            data-lv="{{ item.GradeName }}"
+            data-class="{{ item.ClassName }}"
+            data-parphone="{{ item.FSTPhone }}"
+            bindtap="toCollection">
+            未采集
+          </view>          
+        </view>    
+        <view class="linked-account-list-r-btninfo" wx:elif="{{ item.FSTStatus == 1 }}">
+          <view class="isCollection activeTrueBg">已采集</view>
+          <view class="Collection-desc">未绑定付款账号</view>
+        </view>    
+        <view class="linked-account-list-r-btninfo" wx:elif="{{ item.FSTStatus == 2 }}">
+          <view class="isCollection activeTrueBg">已采集</view>
+          <view class="Collection-desc" style="color:#989898;">已关联付款账号</view>
+        </view>       
+      </view>
+    </view> 
+  </view>
+</view>
+<!-- 显示默认页面组件 -->
+<!-- <na-data-show  wx:if="{{ studentListInfo.length < 1 }}" descriptionInfo="什么也没有找到,下拉刷新试试哈"></na-data-show>  -->
+<!-- wx:if="{{ defaultShow }}" -->

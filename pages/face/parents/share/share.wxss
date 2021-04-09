@@ -1,0 +1,12 @@
+.share-banner {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  align-content: center;
+}
+/*canvas宽高*/
+canvas{
+  width: 600rpx;
+  height: 750rpx;
+  box-shadow:0px 0px 14px 7px #efefef;
+}

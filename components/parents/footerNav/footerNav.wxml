@@ -1,0 +1,13 @@
+<view class="footer-nav">  
+  <navigator class="footer-list" 
+  open-type="redirect"
+  url="{{ item.url }}"
+  style="{{ currentStuds === item.id ?'color:#04C360;font-weight:500;':'' }}"
+  bindtap="currentNav"
+  data-id="{{ item.id }}" 
+  wx:key="index"
+  wx:for="{{ footerNav }}">
+    <view class="iconfont {{ item.fonts }}"></view>
+    <view class="footer-list-title">{{ item.title }}</view>
+  </navigator>    
+</view> 

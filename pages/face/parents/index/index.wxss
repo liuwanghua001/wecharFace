@@ -1,0 +1,234 @@
+.parent-index{
+  width:100%;  
+  background:#F2F2F2;
+}
+.top-title{
+  width:92%;
+  height:150rpx;
+  line-height:150rpx;
+  /* background:#fff; */
+  margin:0 auto;
+  display:flex;
+}
+.top-title .top-title-l{
+  flex:1;
+  color:#333333;
+  font-size:35rpx;
+  font-weight:500;
+}
+.top-title .top-title-r{
+  width:200rpx;  
+}
+.top-title .top-title-r .bind-account{
+  width:200rpx;
+  height:70rpx;
+  font-size:27rpx;
+  border-radius:14rpx;
+  text-align:center;
+  line-height:70rpx;
+  background:#04C360;
+  color:#fff;
+  margin:40rpx auto 0 auto;
+}
+.parent-index .aImg{
+  width:92%;
+  height:280rpx;
+  border-radius:14rpx;
+  background:#666;
+  margin:0 auto;
+}
+.parent-index .aImg .pic{
+  width:690rpx;
+  height:280rpx;
+  display:block;
+}
+.comsumption-statistics{
+  width:88%;
+  height:200rpx;
+  /* background:#FFF; */
+  margin:40rpx auto 0 auto;
+  border-radius:14rpx;
+  display:flex;
+  padding:5% 2%;
+}
+.comsumption-statistics .comsumption-statistics-l{
+  width:400rpx;
+  height:100%;  
+}
+/* 消费统计 */
+.comsumption-statistics-l-tit{ 
+  color:#000000;
+  font-size:38rpx;
+  font-weight:500;
+}
+.comsumption-statistics-l .today-comsumption{
+  /* background:green;   */
+  display:flex;
+  margin-top:20rpx;
+}
+.comsumption-statistics-l .today-comsumption .today-comsumption-l{
+  width:120rpx;
+}
+.comsumption-statistics-l .today-comsumption .today-comsumption-l .iconfont{
+  width:100rpx;
+  height:100rpx;
+  border-radius:50%;
+  text-align:center;
+  line-height:100rpx;
+  font-size:56rpx;
+  color:#fff;
+  background:#3FCB85;
+}
+.comsumption-statistics-l .today-comsumption .today-comsumption-r{
+  flex:1;
+  text-indent:10rpx;
+}
+/* 今日累计消费 */
+.comsumption-statistics-l .today-comsumption .today-comsumption-r .today-comsumption-r-tit{
+  color:#333333;
+  font-size:35rpx;
+}
+.comsumption-statistics-l .today-comsumption .today-comsumption-r .today-comsumption-r-price{
+  color:#04C360;
+  font-size:40rpx;
+  margin-top:20rpx;
+}
+.comsumption-statistics .comsumption-statistics-r{
+  flex:1;
+}
+.comsumption-statistics .comsumption-statistics-r .today-comsumption-pic{
+  width:233rpx;
+  height:198rpx;
+  display:block;  
+  margin:0 auto;
+}
+/* 修改密码框弹层 */
+.password-change-box{      
+  /* background:#f00; */
+  border-radius:140rpx;
+  width:700rpx;
+  height:100%;
+  align-items:center;
+  display:flex;
+  justify-content:center;
+}
+.password-change-box .password-change-boxcon{
+  width:92%;
+  height:650rpx;  
+  background:#fff;
+  border-radius:14rpx;
+}
+.password-change-box .password-change-boxcon .close{
+  display:flex;
+  height:70rpx;  
+}
+.password-change-box .password-change-boxcon .close text:nth-child(1){
+  flex:1;
+}
+.password-change-box .password-change-boxcon .close text:nth-child(2){
+  width:100rpx;  
+  text-align:center;
+  line-height:70rpx;
+  text-indent:30rpx;
+  color:#666666;
+  /* background:red; */
+}
+.password-change-box .password-change-boxcon .title{
+  color:#000000;
+  margin-top:40rpx;
+  font-size:35rpx;
+  text-align:center;
+}
+/* 表单区 */
+.change-password-wrap{
+  height:340rpx;
+}
+.change-password-wrap .prompt-message{
+  height:90rpx;
+  text-align:right;
+  color:#989898;
+  line-height:90rpx;
+  font-size:28rpx;
+  padding-right:30rpx;
+}
+.change-password-wrap .change-password{
+  display:flex;
+  width:92%;
+  margin:0 auto;
+  height:100rpx;
+  line-height:100rpx;
+  margin-top:30rpx;
+}
+.change-password-wrap .change-password .change-password-l{
+  width:160rpx;
+  text-align:right;
+  font-size:32rpx;
+  color:#656565;
+}
+.change-password-wrap .change-password .change-password-r{
+  flex:1;
+}
+.confirm-btn{
+  display:flex;
+  height:200rpx;
+  text-align:center;
+}
+.confirm-btn .confirm-btn-l{
+  flex:1;  
+}
+.confirm-btn .confirm-btn-l .cancel,
+.confirm-btn .confirm-btn-r .confirm{
+  width:200rpx;
+  height:80rpx;
+  font-size:30rpx;  
+  line-height:80rpx;
+  border-radius:14rpx;
+  margin:0 auto;
+}
+.confirm-btn .confirm-btn-l .cancel{  
+  border:1px solid #656565;
+  color:#656565;  
+}
+.confirm-btn .confirm-btn-r .confirm{
+  background:#04C360;
+  color:#fff;
+}
+.confirm-btn .confirm-btn-r{
+  flex:1;
+}
+/* 引导页 */
+.onCloseshowParentGuidePage{
+  height:100%;
+  margin:40rpx 0 0 100rpx;
+}
+.onCloseshowParentGuidePage image{
+  width:446rpx;
+  height:547rpx;
+}
+/* 统计图 */
+.summary-graph{
+  /* width:92%;
+  height:400rpx;
+  padding-bottom:50rpx;
+  border-radius:14rpx;
+  text-align:center;
+  margin:40rpx auto 200rpx auto;
+  color:#fff;
+  font-size:50rpx;
+  line-height:300rpx;
+  background:#555; */
+  position: absolute;
+  top: 58%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+ec-canvas{
+  width:690rpx;
+  height:450rpx;
+  margin: auto;
+}
+
